@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image.png" href="/static/banco.png">
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="tarjeta">
+
+        <i class="bi bi-person-circle icono-principal"></i>
+
+        <h1>Bienvenido</h1>
+
+        <div class="datos-usuario">
+
+            <p>
+                <strong>Cuenta:</strong>
+                {{ cuenta.get_numero_cuenta() }}
+            </p>
+
+            <p>
+                <strong>Propietario:</strong>
+                {{ cuenta.get_propietario() }}
+            </p>
+
+            <p>
+                <strong>Saldo:</strong>
+                Q{{ cuenta.get_saldo() }}
+            </p>
+
+        </div>
+
+        <a href="/transferir" class="btn-principal">
+            <i class="bi bi-arrow-left-right"></i>
+            Realizar transferencia
+        </a>
+
+        <a href="/depositar" class="btn-principal">
+            <i class="bi bi-cash-coin"></i>
+            Depositar dinero
+        </a>
+
+        <a href="/retirar" class="btn-principal">
+            <i class="bi bi-wallet2"></i>
+            Retirar dinero
+        </a>
+
+        <a href="/logout" class="btn-secundario">
+            Cerrar sesión
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef3ff, #f8fafc);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 430px;
+    padding: 40px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.icono-principal {
+    font-size: 85px;
+    color: #1f3c88;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #1f3c88;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: block;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn-principal {
+    background-color: #1f3c88;
+    color: white;
+}
+
+.btn-principal:hover {
+    background-color: #162d66;
+}
+
+.btn-secundario {
+    border: 2px solid #1f3c88;
+    color: #1f3c88;
+    background-color: white;
+}
+
+.btn-secundario:hover {
+    background-color: #1f3c88;
+    color: white;
+}
+
+.datos-usuario {
+    margin: 25px 0;
+    text-align: left;
+    background-color: #f6f8fc;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.datos-usuario p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.mensaje {
+    margin-top: 18px;
+    color: #333;
+    font-weight: bold;
+}

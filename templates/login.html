@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image.png" href="/static/banco.png">
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="tarjeta">
+
+        <i class="bi bi-shield-lock icono-principal"></i>
+
+        <h1>Ingresar al Cajero</h1>
+
+        <p class="descripcion">
+            Inicia sesión utilizando tu número de cuenta y PIN.
+        </p>
+
+        <form method="POST">
+
+            <input type="text"
+                   name="numero"
+                   placeholder="Número de cuenta"
+                   required>
+
+            <input type="password"
+                   name="pin"
+                   placeholder="PIN"
+                   required>
+
+            <button type="submit" class="btn-principal">
+                Ingresar
+            </button>
+
+        </form>
+
+        <p class="mensaje">{{ mensaje }}</p>
+
+        <a href="/" class="btn-secundario">
+            Regresar
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
